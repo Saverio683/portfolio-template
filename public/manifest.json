@@ -4,8 +4,8 @@
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",,
-      "purpose": "maskable"
+      "sizes": "64x64 32x32 24x24 16x16",
+      "purpose": "maskable",
       "type": "image/x-icon"
     },
     {
