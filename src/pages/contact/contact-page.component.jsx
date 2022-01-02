@@ -16,9 +16,9 @@ const ContactPage = () => (
             <ImagesContainer>
             {
                 contactPageData.profileIcons.map((ico, i) => (
-                    <a href='/' key={i}>
+                    <a href={ico[1]} key={i} target='_blank' rel='noreferrer'>
                         <AccountIco 
-                            src={ico} 
+                            src={ico[0]} 
                             alt='profile' 
                             key={i}
                         />

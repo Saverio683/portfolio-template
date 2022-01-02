@@ -4,7 +4,7 @@ const Footer = () => (
     <FooterContainer>
         <FooterString>
             Created by {}
-            <a href='https://github.com/Saverio683' target='_blank' rel="noreferrer">
+            <a href='https://github.com/Saverio683' target='_blank' rel='noreferrer'>
                 Saverio Randazzo
             </a> 
             {} © {} 

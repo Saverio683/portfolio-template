@@ -114,5 +114,5 @@ export const projectsPageData = {
 }
 
 export const contactPageData = {
-    profileIcons: [account, account, account]
+    profileIcons: [[account, '/'], [account, '/'], [account, '/']]
 }
