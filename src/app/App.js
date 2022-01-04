@@ -21,7 +21,8 @@ const App = () => {
     <AppContainer>
       <Header currentPath={pathname}/>
       <Suspense fallback={
-        <Loading background='#029602' size='2.5rem' margin='1.5rem' />}>
+        <Loading background='#029602' size='2.5rem' margin='1.5rem' />}
+      >
         <ScrollToTop>
           <Routes location={location} key={pathname}>
             <Route exact path='/' element={<HomePage />} />
