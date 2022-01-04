@@ -1,4 +1,4 @@
-import { useState, Fragment } from 'react';
+import { useState } from 'react';
 import Skill from '../../components/skill/skill.component';
 
 import { aboutPageData } from '../../assets/datas';
@@ -15,33 +15,31 @@ const AboutPage = () => {
         setCache(prevCache => prevCache.map((val, i) => i !== n ? val : !val));
 
     return ( 
-        <Fragment>
-            <PageContainer>
-                <Wrapper>
-                    <Title>ABOUT ME</Title>
-                    <DownloadButton><a href='cv.pdf' download>DOWNLOAD RESUME</a></DownloadButton>
-                </Wrapper>        
+        <PageContainer>
+            <Wrapper>
+                <Title>ABOUT ME</Title>
+                <DownloadButton><a href='cv.pdf' download>DOWNLOAD RESUME</a></DownloadButton>
+            </Wrapper>        
+            {
+                aboutMe.map((p, i) => (
+                    <Paragraph key={i}>{p}</Paragraph>
+                ))
+            }
+            <SecondTitle>My skills</SecondTitle>
+            <SkillSContainer> 
                 {
-                    aboutMe.map((p, i) => (
-                        <Paragraph key={i}>{p}</Paragraph>
+                    skillsData.map((skill, i) => (
+                        <Skill 
+                            isToggled={cache[i]} 
+                            skillName={skill.name} 
+                            onClickFunc={() => (onToggleFunc(i))}
+                            icons={skill.icons}
+                            key={i}                         
+                        />
                     ))
                 }
-                <SecondTitle>My skills</SecondTitle>
-                <SkillSContainer> 
-                    {
-                        skillsData.map((skill, i) => (
-                            <Skill 
-                                isToggled={cache[i]} 
-                                skillName={skill.name} 
-                                onClickFunc={() => (onToggleFunc(i))}
-                                icons={skill.icons}
-                                key={i}                         
-                            />
-                        ))
-                    }
-                </SkillSContainer>
-            </PageContainer>
-        </Fragment>
+            </SkillSContainer>
+        </PageContainer>
     )
 }
 
