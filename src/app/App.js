@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { Loading } from 'react-loading-dot';
 
 import Header from '../components/header/header.component';
+import Footer from '../components/footer/footer.component';
 import ScrollToTop from '../components/scroll-to-top/scroll-to-top.component';
 
 import { AppContainer } from './app.styles';
@@ -19,17 +20,18 @@ const App = () => {
   return (
     <AppContainer>
       <Header currentPath={pathname}/>
-        <Suspense fallback={
-          <Loading background='#029602' size='2.5rem' margin='1.5rem' />}>
-          <ScrollToTop>
-            <Routes location={location} key={pathname}>
-              <Route exact path='/' element={<HomePage />} />
-              <Route exact path='/about' element={<AboutPage />} />
-              <Route exact path='/projects' element={<ProjectsPage />} />
-              <Route exact path='/contact' element={<ContactPage />} />
-            </Routes>
-          </ScrollToTop>
-        </Suspense>
+      <Suspense fallback={
+        <Loading background='#029602' size='2.5rem' margin='1.5rem' />}>
+        <ScrollToTop>
+          <Routes location={location} key={pathname}>
+            <Route exact path='/' element={<HomePage />} />
+            <Route exact path='/about' element={<AboutPage />} />
+            <Route exact path='/projects' element={<ProjectsPage />} />
+            <Route exact path='/contact' element={<ContactPage />} />
+          </Routes>
+        </ScrollToTop>
+      </Suspense>
+      <Footer currentPath={pathname}/>
     </AppContainer>
   );
 }

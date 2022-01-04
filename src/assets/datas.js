@@ -8,6 +8,7 @@ import image from './images/image.svg';
 import account from './icons/account.svg';
 
 export const aboutPageData = {
+    //each array of aboutMeis equivalent to a paragraph
     aboutMe: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus ultrices dignissim elit tristique ornare tellus odio. 
         Iaculis in nisi, amet euismod mattis faucibus. 

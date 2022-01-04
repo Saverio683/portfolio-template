@@ -1,6 +1,4 @@
 import { useState, Fragment } from 'react';
-
-import Footer from '../../components/footer/footer.component';
 import Skill from '../../components/skill/skill.component';
 
 import { aboutPageData } from '../../assets/datas';
@@ -43,7 +41,6 @@ const AboutPage = () => {
                     }
                 </SkillSContainer>
             </PageContainer>
-            <Footer />
         </Fragment>
     )
 }

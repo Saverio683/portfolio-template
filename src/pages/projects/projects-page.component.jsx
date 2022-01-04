@@ -1,7 +1,6 @@
 import { useState, useEffect, Fragment } from 'react';
 
 import Project from '../../components/project/project.component';
-import Footer from '../../components/footer/footer.component';
 
 import { projectsPageData } from '../../assets/datas';
 
@@ -70,7 +69,6 @@ const ProjectsPage = () => {
                     </DescriptionContainer>
                 </ProjectsContainer>
             </PageContainer>
-            <Footer />
         </Fragment>
     )
 }

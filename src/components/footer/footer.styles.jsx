@@ -17,6 +17,10 @@ export const FooterContainer = styled.div`
             color: #34BB22;
         }
     }
+
+    &.hidden {
+        display: none;
+    }
 `;
 
 export const FooterString = styled.span`

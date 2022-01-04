@@ -1,7 +1,7 @@
 import { FooterContainer, FooterString } from './footer.styles.jsx';
 
-const Footer = () => (
-    <FooterContainer>
+const Footer = ({ currentPath }) => (
+    <FooterContainer className={currentPath === '/' ? 'hidden' : null}>
         <FooterString>
             Created by {}
             <a href='https://github.com/Saverio683' target='_blank' rel='noreferrer'>

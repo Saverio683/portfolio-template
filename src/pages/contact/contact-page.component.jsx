@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 
 import EmailForm from '../../components/email-form/email-form.component';
-import Footer from '../../components/footer/footer.component';
 
 import { contactPageData } from '../../assets/datas';
 
@@ -29,7 +28,6 @@ const ContactPage = () => (
             <CoolSpan>You can also send me an email:</CoolSpan>
             <EmailForm />
         </PageContainer> 
-        <Footer />
     </Fragment>
 )
 
