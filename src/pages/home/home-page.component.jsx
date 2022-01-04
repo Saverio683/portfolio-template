@@ -30,7 +30,7 @@ const HomePage = () => {
         return () => {
             typed = null;
             typed1 = null;
-            //when you go to another page, the 'typed' strings are eliminated
+            //when you go to another page, the 'typed' strings are 'eliminated' 
             //this is to prevent memory leaks
         }
     }, []);

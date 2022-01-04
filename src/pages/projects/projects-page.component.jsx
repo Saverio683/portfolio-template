@@ -27,12 +27,12 @@ const ProjectsPage = () => {
     return (
         <Fragment>
             <PageContainer>
-                    <Title>MY PROJECTS</Title>
-                    {
-                        introduction.map((x, i) => (
-                            <Introduction key={i}>{x}</Introduction>
-                        ))
-                    }
+                <Title>MY PROJECTS</Title>
+                {
+                    introduction.map((x, i) => (
+                        <Introduction key={i}>{x}</Introduction>
+                    ))
+                }
                 <ProjectsContainer>
                     <ProjectsPreview>
                         {
