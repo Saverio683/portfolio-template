@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkilsContainer = styled.div`
-    margin-bottom: 65px;
+    margin-bottom: 70px;
 
     @media only screen and (max-width: 700px) {
         margin-bottom: 40px;
@@ -39,7 +39,7 @@ export const SkillName = styled.span`
     font-size: 28px;
     vertical-align: baseline;
     font-family: 'Poppins', sans-serif;
-`;
+`; 
 
 export const IconsWrapper = styled.div`
     position: absolute;
@@ -108,4 +108,5 @@ export const IconName = styled.span`
     display: none;
     position: absolute;
     margin-top: 38px;
+    font-family: 'Poppins', sans-serif;
 `;
