@@ -18,7 +18,7 @@ const EmailForm = () => {
           });
 
         e.target.reset();
-      };
+    };
 
     return (
         <form ref={form} onSubmit={sendEmail}>
