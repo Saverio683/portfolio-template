@@ -1,13 +1,9 @@
 import styled from 'styled-components';
-import backgroundImage from '../../assets/images/background.webp';
+import backgroundImage from '../../assets/images/background.jpg';
 
 export const PageContainer = styled.div`
     height: 100%;
     background: url(${backgroundImage}) no-repeat center center fixed;
-    .map {background: url('../../assets/images/background.jpg');}
-        @supports (background-image: -webkit-image-set(url('../../assets/images/background.webp') 1x)) {
-            .map {background-image: -webkit-image-set(url('../../assets/images/background.jpg') 1x) }
-    }
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
