@@ -6,7 +6,7 @@ const Project = ({ image, projectName, onClickFunc, onOverFunc, onLeaveFunc }) =
         onMouseOver={onOverFunc}
         onMouseLeave={onLeaveFunc}
     >
-        <ProjectImage src={image} alt='projectimage' className='img-p'/>
+        <ProjectImage src={image} width='80%' height='auto' alt='projectimage' className='img-p'/>
         <ProjectName>{projectName.toUpperCase()}</ProjectName>
     </ProjectCard>  
 )

@@ -25,8 +25,6 @@ export const ProjectCard = styled.div`
 `;
 
 export const ProjectImage = styled.img`
-    width: 80%;
-    height: auto;
     margin: 0 auto;
     margin-top: 30px;
 `;

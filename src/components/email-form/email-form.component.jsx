@@ -22,7 +22,7 @@ const EmailForm = () => {
 
     return (
         <form ref={form} onSubmit={sendEmail}>
-            <EmailInput type='email' placeholder='Email' required autoFocus name='from_email'/>
+            <EmailInput type='email' placeholder='Email' required name='from_email'/>
             <EmailInput type='text' placeholder='Subject' name='subject'/>
             <TextInput type='text' placeholder='Enter your message' required name='message'/>
             <SubmitButton type='submit'>SUBMIT</SubmitButton>
