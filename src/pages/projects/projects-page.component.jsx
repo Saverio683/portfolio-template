@@ -46,7 +46,7 @@ const ProjectsPage = () => {
                             />
                         ))
                     }
-                </ProjectsPreview>
+                </ProjectsPreview> 
                 <DescriptionContainer>
                     {
                         hoverMemo || hoverMemo === 0 ?

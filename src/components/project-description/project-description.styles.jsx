@@ -12,6 +12,17 @@ export const Wrapper = styled.div`
 export const Title = styled.span`
     font-weight: bolder;
     ${spanStyles}
+
+    &.clickable {
+        a {            
+            &:hover {
+                color: #34BB22;
+                transition: 0.3s ease-in-out;
+            }
+            color: inherit;
+            text-decoration: inherit;
+        }
+    }
 `;
 
 export const Info = styled.span`

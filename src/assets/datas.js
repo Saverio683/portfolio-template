@@ -67,7 +67,8 @@ export const projectsPageData = {
             Iaculis in nisi, amet euismod mattis faucibus. 
             Mattis in diam sed pellentesque porta. 
             Maecenas tempor, sed in aliquam nisl.`,
-            technologies: `HTML, CSS`
+            technologies: `HTML, CSS`,
+            githubRepo: '/'
         },
         {
             name: 'Project 2',
@@ -81,7 +82,8 @@ export const projectsPageData = {
             Iaculis in nisi, amet euismod mattis faucibus. 
             Mattis in diam sed pellentesque porta. 
             Maecenas tempor, sed in aliquam nisl.`,
-            technologies: `HTML, CSS`
+            technologies: `HTML, CSS`,
+            githubRepo: '/'
         },        
         {
             name: 'Project 3',
@@ -90,7 +92,8 @@ export const projectsPageData = {
             Tellus ultrices dignissim elit tristique ornare tellus odio. 
             Iaculis in nisi, amet euismod mattis faucibus. 
             Mattis in diam sed pellentesque porta.`,
-            technologies: `HTML, CSS`
+            technologies: `HTML, CSS`,
+            githubRepo: '/'
         },
         {
             name: 'Project 4',
@@ -109,7 +112,8 @@ export const projectsPageData = {
             Iaculis in nisi, amet euismod mattis faucibus. 
             Mattis in diam sed pellentesque porta. 
             Maecenas tempor, sed in aliquam nisl.`,
-            technologies: `HTML, CSS`
+            technologies: `HTML, CSS`,
+            githubRepo: '/'
         }        
     ]
 }
